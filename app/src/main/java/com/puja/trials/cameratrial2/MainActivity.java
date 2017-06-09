@@ -178,7 +178,7 @@ public class MainActivity extends Activity {
 
 
     private void storeCameraPhotoInSDCard(Bitmap bitmap, String currentDate) {
-        File outputFile = new File(Environment.getExternalStorageDirectory(), "/swisdownloads/frontCapture_" + currentDate + ".jpg");
+        File outputFile = new File(Environment.getExternalStorageDirectory(), "/appdownloads/frontCapture_" + currentDate + ".jpg");
         //   File outputFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM), "photo_" + currentDate + ".jpg");
 
         try {
