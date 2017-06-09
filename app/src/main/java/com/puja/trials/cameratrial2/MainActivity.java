@@ -146,18 +146,6 @@ public class MainActivity extends Activity {
                     matrix.postScale(scaleWidth, scaleHeight);
                     matrix.postRotate(90);
                     Bitmap resizedBitmap = Bitmap.createBitmap(bitmap, 0, 0, width, height, matrix, true);
-
-//                    if (BackgroundService.mLastLocation != null)
-//                    {
-//                        if (AlarmActivity.cameraID == 0) {
-//                            partFilename = "backCapture_" + String.valueOf(preferences.getLong(Constants.ALARM_TRIGGER_EPOCH_TIME, 0)) + "_" + String.valueOf(System.currentTimeMillis()) + "_" + AppUtil.getDeviceID(getApplicationContext()) + "_" + String.valueOf(BackgroundService.mLastLocation.getLatitude()) + "_" + String.valueOf(BackgroundService.mLastLocation.getLongitude());
-//
-//                        } else if (AlarmActivity.cameraID == 1) {
-//                            partFilename = "frontCapture_" + String.valueOf(preferences.getLong(Constants.ALARM_TRIGGER_EPOCH_TIME, 0)) + "_" + String.valueOf(System.currentTimeMillis()) + "_" + AppUtil.getDeviceID(getApplicationContext()) + "_" + String.valueOf(BackgroundService.mLastLocation.getLatitude()) + "_" + String.valueOf(BackgroundService.mLastLocation.getLongitude());
-//
-//                        }
-//                    }
-
                     String partFilename = "frontCapture_" + String.valueOf(System.currentTimeMillis()) + "_" ;
 
                     storeCameraPhotoInSDCard(resizedBitmap, partFilename);
